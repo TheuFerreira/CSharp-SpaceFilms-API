@@ -1,0 +1,12 @@
+CREATE SCHEMA spacefilms;
+
+USE spacefilms;
+
+CREATE TABLE user(
+	id_user INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email_checked TINYINT NOT NULL DEFAULT 0,
+    disabled TINYINT NOT NULL DEFAULT 0
+);
